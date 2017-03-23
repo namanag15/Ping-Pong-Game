@@ -1,0 +1,40 @@
+#surf{
+	background-color: grey;
+    width: 60%;
+    height: 500px;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    position: fixed;
+
+}
+
+#ball{
+	background-color: Red;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: fixed;
+	top: 230.5px;
+	left: 424.8px;
+
+}
+
+#plank1{
+	background-color: Green;
+	width: 20px;
+	height: 120px;
+	position: fixed;
+	top: 200px;
+
+}
+
+#plank2{
+	background-color: Green;
+	width: 20px;
+	height: 120px;
+	position: fixed;
+	top: 200px;
+	left: 874.6033935546875px;
+
+}
