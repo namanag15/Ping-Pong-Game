@@ -45,11 +45,11 @@ function move(){
 function check(){
 	if(ball.getBoundingClientRect().top-surf.getBoundingClientRect().top<ySpeed){
 		ball.style.top=surf.getBoundingClientRect().top+'px';
-		ySpeed=-1.2*ySpeed;
+		ySpeed=-1.05*ySpeed;
 	}
 	if(surf.getBoundingClientRect().bottom-ball.getBoundingClientRect().bottom<(-1*ySpeed)){
 		ball.style.bottom=surf.getBoundingClientRect().bottom+'px';
-		ySpeed=-1.2*ySpeed;
+		ySpeed=-1.05*ySpeed;
 	}
 	if(ball.getBoundingClientRect().left-plank1.getBoundingClientRect().right<xSpeed){
 		if(ball.getBoundingClientRect().bottom<plank1.getBoundingClientRect().bottom&&ball.getBoundingClientRect().top>plank1.getBoundingClientRect().top){
@@ -86,38 +86,38 @@ function func1(e){
 		}
 	}
       if(map[81]===true && surf.getBoundingClientRect().top < plank1.getBoundingClientRect().top){
-      	if(plank1.getBoundingClientRect().top-surf.getBoundingClientRect().top<10){
+      	if(plank1.getBoundingClientRect().top-surf.getBoundingClientRect().top<15){
 			plank1.style.top=surf.getBoundingClientRect().top+'px';
 		}
 		else{
-		plank1.style.top=(parseInt(plank1.style.top)-20)+'px';
+		plank1.style.top=(parseInt(plank1.style.top)-15)+'px';
       }
   }
 
       if(map[65]===true && plank1.getBoundingClientRect().bottom < surf.getBoundingClientRect().bottom){
-      	if(surf.getBoundingClientRect().bottom-plank1.getBoundingClientRect().bottom<10){
+      	if(surf.getBoundingClientRect().bottom-plank1.getBoundingClientRect().bottom<15){
 			plank1.style.bottom=surf.getBoundingClientRect().bottom+'px';
 		}
 		else{
-		plank1.style.top=(parseInt(plank1.style.top)+20)+'px';
+		plank1.style.top=(parseInt(plank1.style.top)+15)+'px';
       }
   }
 
   if(map[73]===true && surf.getBoundingClientRect().top < plank2.getBoundingClientRect().top){
-      	if(plank2.getBoundingClientRect().top-surf.getBoundingClientRect().top<10){
+      	if(plank2.getBoundingClientRect().top-surf.getBoundingClientRect().top<15){
 			plank2.style.top=surf.getBoundingClientRect().top+'px';
 		}
 		else{
-		plank2.style.top=(parseInt(plank2.style.top)-20)+'px';
+		plank2.style.top=(parseInt(plank2.style.top)-15)+'px';
       }
       }
 
       if(map[75]===true && plank2.getBoundingClientRect().bottom < surf.getBoundingClientRect().bottom){
-      	if(surf.getBoundingClientRect().bottom-plank2.getBoundingClientRect().bottom<10){
+      	if(surf.getBoundingClientRect().bottom-plank2.getBoundingClientRect().bottom<15){
 			plank2.style.bottom=surf.getBoundingClientRect().bottom+'px';
 		}
 		else{
-		plank2.style.top=(parseInt(plank2.style.top)+20)+'px';
+		plank2.style.top=(parseInt(plank2.style.top)+15)+'px';
       }
       }
 
